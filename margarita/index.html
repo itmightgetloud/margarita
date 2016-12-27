@@ -25,7 +25,7 @@
     <div class="navbar">
       <div class="container">
         <div class="logo">
-          <a href="#"><img class="logo" src="images/logo.png" alt="Margarita" style></a>
+          <a href="#main"><img class="logo" src="images/logo.png" alt="Margarita" style></a>
         </div>
           <div class="nav">
             <li>
@@ -35,9 +35,9 @@
                 <a href="index.html"><img src="./images/polish-flag.png"></a>
               </div>
             </li>
-            <li><a onclick="smoothScroll(document.getElementById('offer'))">Oferta</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('kontakt'))">Kontakt</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('opis'))">O nas</a></li>
+            <li><a href="#offer" ))">Oferta</a></li>
+            <li><a href='#contact'>Kontakt</a></li>
+            <li><a href="#about">O nas</a></li>
           </div>
           <div class="flags-hidden">
                 <a href="english.html"><img src="./images/british-flag.png"></a>
@@ -50,12 +50,13 @@
 
     <div class="jumbotron">
         <div class="main" id="main">
+        <div></div>
         <h1>P.P.H.U. MARGARITA</h1>
-        <div class="btn btn-primary btn-lrg btn-fill" onclick="smoothScroll(document.getElementById('myCarousel'))">Witamy</div>
+        <a class="btn btn-primary btn-lg btn-fill" href="#myCarouselScroll">Witamy</a>
         </div>
     </div>
     <!--Carousel-->
-
+    <div id="myCarouselScroll"></div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -67,23 +68,20 @@
           <img class="first-slide" src="./images/skarpety/stop-dam-praz-chol.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Pierwszy.</h1>
             </div>
           </div>
         </div>
         <div class="item">
           <img class="second-slide" src="./images/skarpety/stopki-4-prazki.jpg" alt="Second slide">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Drugi.</h1>
+            <div class="carousel-caption">              
             </div>
           </div>
         </div>
         <div class="item">
           <img class="third-slide" src="./images/skarpety/sport-tecza.jpg" alt="Third slide">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Trzeci.</h1>
+            <div class="carousel-caption">              
             </div>
           </div>
         </div>
@@ -97,8 +95,9 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
     <!--About-->
-      <div class="opis" id="opis">
+      <div class="about" id="about">
         <div class="container">
             <h2>O nas</h2>
             <p>Jesteśmy rodzinną firma, działającą na rynku od 1983 roku.</p>
@@ -109,7 +108,7 @@
             <hr></hr>
         </div>
       </div>
-        <div class="opinie" id="opinie">
+        <div class="Reviews" id="Reviews">
           <div class="container">
             <h2>Opinie<h2>
             <div class="col-md-6">Nasi Klienci
@@ -168,36 +167,39 @@
             <div class="col-md-4">
               <div class="circle1"></div>
               <h2>Kontakt<h2>
-                <p> Przejdź do formularza kontaktowego.</p>
-                <a class="btn btn-default" onclick="smoothScroll(document.getElementById('kontakt'))">Więcej</a>
+                <p> Zobacz w jaki sposób możesz się z nami</p>
+                <a class="btn btn-default" href="#contact">Więcej</a>
             </div>
             <div class="col-md-4">
               <div class="circle2"></div>
               <h2>Galeria<h2>
                 <p> Zobacz więcej w galerii naszch produktów </p>
-                <a class="btn btn-default" href="index.html">Więcej</a>
+                <a class="btn btn-default" href="#">Więcej</a>
             </div>
             <div class="col-md-4">
               <div class="circle3"></div>
               <h2>Adres<h2>
                 <p> P.P.H.U. "MARGARITA" ul. Stokrotki 10a, 91-864 Łódź </p>
-                <a class="btn btn-default" onclick="smoothScroll(document.getElementById('map'))">Więcej</a>
+                <a class="btn btn-default" href="#map">Więcej</a>
             </div>
-            <hr></hr>
           </div>
         </div>
     </div>
 
     <!--MAPS-->
-    <div class="container"><div id="map"></div>
-    <hr></hr></div>
+    <div class="container">
+      <hr></hr>
+      <div id="map"></div>
+      <hr></hr>
+    </div>
 
     <!--CONTACT FORM-->
-    <div class="container" id="kontakt">
+    <div class="container" id="contact">
       <h1>Kontakt</h1>
       <p>tel./fax. +48 42 659 40 47</p>
       <p>tel.kom. +48 600 07 32 03</p>
       <p>E-mail: margarita@margarita.pl</p>
+   <!--
       <div class="contact" id="contact">
           <div class="contact-div">
             <div class="sepreater"></div>
@@ -221,12 +223,14 @@
          </form>
           </div>
       </div>
+    -->
+    <hr></hr>
     </div>
     <!--Footer-->
     <div class="footer">
       <div class="container">
         <p> &copy 2016 </p>
-        <div class = "btn btn-primary btn-lrg btn-fill" onclick="smoothScroll(document.getElementById('main'))" id="up">Do góry</div>
+        <a href="#main" class = "btn btn-primary btn-lrg btn-fill">Do góry</a>
         <a href="https://github.com/itmightgetloud"><img class="git-logo" src="images/git.png" alt="GitHub" style="height:50px; weight:50px"></a>
       </div>
     </div>

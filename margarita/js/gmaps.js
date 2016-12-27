@@ -3,6 +3,7 @@ function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 18,
+          scrollwheel: false,
           center: myLatLng
         });
 
@@ -11,4 +12,5 @@ function initMap() {
           map: map,
           title: 'Margarita'
         });
+
 }
