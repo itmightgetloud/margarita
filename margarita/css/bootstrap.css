@@ -3887,9 +3887,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 15px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  border-top: 0px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(85, 85, 85, 0.90);
+          box-shadow: inset 0 1px 0 rgba(85, 85, 85, 0.90);
 }
 .navbar-collapse.in {
   overflow-y: auto;
@@ -4198,11 +4198,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #3091B2;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #2a6496;
   background-color: transparent;
 }
 .navbar-default .navbar-text {

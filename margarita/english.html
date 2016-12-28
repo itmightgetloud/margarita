@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <!-- Style -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -15,47 +17,49 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-  <title>Margarita -socks producer</title>
+  <title>Margarita - socks producer</title>
 
 </head>
   <body>
 
-<!--NAV-->
-
-    <div class="navbar">
+    <!--NAV-->
+    <nav class="navbar navbar-default">
       <div class="container">
-        <div class="logo">
-          <a href="#"><img class="logo" src="images/logo.png" alt="Margarita" style></a>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#main">Margarita</a>
         </div>
-          <div class="nav">
-            <li>
-              <div class="flags">
-                <a href="english.html"><img src="./images/british-flag.png"></a>
-                <a href="russian.html"><img src="./images/russian-flag.png"></a>
-                <a href="index.html"><img src="./images/polish-flag.png"></a>
-              </div>
-            </li>
-            <li><a onclick="smoothScroll(document.getElementById('offer'))">Products</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('kontakt'))">Contact</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('opis'))">About</a></li>
-          </div>
-          <div class="flags-hidden">
-                <a href="english.html"><img src="./images/british-flag.png"></a>
-                <a href="russian.html"><img src="./images/russian-flag.png"></a>
-                <a href="index.html"><img src="./images/polish-flag.png"></a>
-          </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="nav-links">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">около<span class="sr-only">(current)</span></a></li>
+            <li><a href="#offer")">предлагает</a></li>
+            <li><a href='#contact'>контакт</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="english.html"><img src="./images/british-flag.png"></a></li>
+            <li><a href="russian.html"><img src="./images/russian-flag.png"></a></li>
+            <li><a href="index.html"><img src="./images/polish-flag.png"></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+      <div class="container"><
+        <div class="main" id="main">
+        <div></div>
+        <h1>P.P.H.U. MARGARITA</h1>
+        <a class="btn btn-primary btn-lg btn-fill" href="#myCarouselScroll">Welcome</a>
+        </div>
       </div>
     </div>
-
-
-    <div class="jumbotron">
-        <div class="main" id="main">
-        <h1>P.P.H.U. MARGARITA</h1>
-        <div class="btn btn-primary btn-lrg btn-fill" onclick="smoothScroll(document.getElementById('myCarousel'))">Welcome</div>
-        </div>
-    </div>
     <!--Carousel-->
-
+    <div id="myCarouselScroll"></div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -67,23 +71,20 @@
           <img class="first-slide" src="./images/skarpety/stop-dam-praz-chol.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Pierwszy.</h1>
             </div>
           </div>
         </div>
         <div class="item">
           <img class="second-slide" src="./images/skarpety/stopki-4-prazki.jpg" alt="Second slide">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Drugi.</h1>
+            <div class="carousel-caption">              
             </div>
           </div>
         </div>
         <div class="item">
           <img class="third-slide" src="./images/skarpety/sport-tecza.jpg" alt="Third slide">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Trzeci.</h1>
+            <div class="carousel-caption">              
             </div>
           </div>
         </div>
@@ -97,21 +98,22 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
     <!--About-->
-      <div class="opis" id="opis">
+      <div class="about" id="about">
         <div class="container">
-            <h2>About</h2>
-            <p>We are a family firm. Our business was established in 1983.</p>
-            <p>We offer a wide variety of socks, for example: socks for men, ladies, young people and children.</p>
-            <p>Our offer is characterized by rich-pattern designing and diversity of color tones. In order to meet customers’ expectations we use high quality technology and materials.</p>
-            <p>Aby sprostać oczekiwaniom klientów stosujemy technologie i surowce najwyższej jakości.</p>
-            <p>As a producer, we are open to any kind of suggestions and comments associated with our products.</p>
-            <hr>
+            <h2>около</h2>
+              <p> Мы семейная компания, работающая на рынке с 1983 года. </p>
+              <p> Мы предлагаем широкий ассортимент носков для мужчин, женщин, молодежи и детей. </p>
+              <p> Их характеристики включают в себя богатое разнообразие дизайнов и цветовых тонов. </p>
+              <p> Для того, чтобы соответствовать ожиданиям наших клиентов, мы используем технологии и материалы самого высокого качества. </p>
+              <p> Как производители, мы открыты для всех видов предложений и замечаний о наших продуктах. </p>
+            <hr></hr>
         </div>
       </div>
-        <div class="opinie" id="opinie">
+        <div class="Reviews" id="Reviews">
           <div class="container">
-            <h2>Opinie<h2>
+            <h2>Reviews<h2>
             <div class="col-md-6">Nasi Klienci
               <p>Współpracujemy z wymagającymi klientami, którzy cenią najwyższą jakość, bezpieczeństwo i doświadczenie.
               W pełni wykorzystujemy nasze umiejętności, aby sprostać oczekiwaniom każdego klienta. Dowodem na rzetelność naszych usług jest współpraca z takimi inwestorami jak: ABB, SEGRO, SCA Hygiene Products, Amcor Rentsch, ICI Polska, Reckitt Benckiser, Geant Polska, Lidl Polska, Carrefour Polska, 3M Poland, Armeton Polska, Avon Cosmetics Polska, DB Schenker Logistics, Procter and Gamble DS Polska, Takeda Pharma, TKG Polska, UWE Polska, Wilo Polska.
@@ -125,8 +127,8 @@
         <div class="offer" id="offer">
           <div class="container">
             <hr>
-            <h2>Products</h2>
-            <h5>Custom produced socks, including:</h5>
+            <h2>Предлагает</h2>
+            <h5>Мы предлагаем широкий спектр специализированных продуктов идеально подходит для наших клиентов. Самые популярные варианты:</h5>
             <!--FIRST ROW-->
             <div class="row">
               <div class="col-md-4">
@@ -154,7 +156,7 @@
                 <img src="./images/skarpety/garnitur-prazki.jpg" style="width:240px; height:240px;">
               </div>
               <div class="col-md-4">
-                <h5>Sports</h5>
+                <h5>Sport's</h5>
                 <img src="./images/skarpety/sport-tenis.jpg" style="width:240px; height:240px;">
               </div>
             </div>
@@ -167,66 +169,46 @@
             <hr>
             <div class="col-md-4">
               <div class="circle1"></div>
-              <h2>Contact<h2>
-                <p> Go to contact form.</p>
-                <a class="btn btn-default" onclick="smoothScroll(document.getElementById('kontakt'))">More</a>
+              <h2>контакт<h2>
+                <p>Проверьте, как вы можете связаться с нами</p>
+                <a class="btn btn-default" href="#contact">More</a>
             </div>
             <div class="col-md-4">
               <div class="circle2"></div>
-              <h2>Gallery<h2>
-                <p> See more in the products gallery. </p>
-                <a class="btn btn-default" href="index.html">More</a>
+              <h2>Галерея<h2>
+                <p>Проверьте больше нашей продукции</p>
+                <a class="btn btn-default" href="#">More</a>
             </div>
             <div class="col-md-4">
               <div class="circle3"></div>
-              <h2>Adress<h2>
-                <p> P.P.H.U. "MARGARITA" ul. Stokrotki 10a, 91-864 Lodz </p>
-                <a class="btn btn-default" onclick="smoothScroll(document.getElementById('map'))">More</a>
+              <h2>адрес<h2>
+                <p> P.P.H.U. "MARGARITA" ul. Stokrotki 10a, 91-864 Łódź </p>
+                <a class="btn btn-default" href="#map">More</a>
             </div>
-            <hr></hr>
           </div>
         </div>
     </div>
 
     <!--MAPS-->
-    <div class="container"><div id="map"></div>
-    <hr></hr></div>
+    <div class="container">
+      <hr></hr>
+      <div id="map"></div>
+      <hr></hr>
+    </div>
 
     <!--CONTACT FORM-->
-    <div class="container" id="kontakt">
-      <h1>Contact</h1>
+    <div class="container" id="contact">
+      <h1>контакт</h1>
       <p>tel./fax. +48 42 659 40 47</p>
       <p>tel.kom. +48 600 07 32 03</p>
       <p>E-mail: margarita@margarita.pl</p>
-      <div class="contact" id="contact">
-          <div class="contact-div">
-            <div class="sepreater"></div>
-          </div>
-          <p class="contact-para">
-            <br>If you cannot reach us, please use the form. We usually answer within 1-2 days.</p>
-          <div class="w-form">
-            <form action="contact.php" method="post">
-            <label for="name">Name:</label>
-            <br>
-             <input class="input" type="text" placeholder="Podaj imie" name="cf_name">
-             <br>
-           <label for="email">Email:</label>
-             <br>
-             <input class="input" placeholder="Wprowadz adres email" type="text" name="cf_email" required="required">
-           <br>
-           <label for="email">Message:</label>
-           <br>
-             <textarea class="input message" placeholder="Wprowadz wiadomosc" name="cf_message"></textarea><br>
-           <input class="button" type="submit" value="Send">
-         </form>
-          </div>
-      </div>
+    <hr></hr>
     </div>
     <!--Footer-->
     <div class="footer">
       <div class="container">
         <p> &copy 2016 </p>
-        <div class = "btn btn-primary btn-lrg btn-fill" onclick="smoothScroll(document.getElementById('main'))" id="up">Go up</div>
+        <a href="#main" class = "btn btn-primary btn-lrg btn-fill">Home</a>
         <a href="https://github.com/itmightgetloud"><img class="git-logo" src="images/git.png" alt="GitHub" style="height:50px; weight:50px"></a>
       </div>
     </div>
