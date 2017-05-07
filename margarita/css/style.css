@@ -9,6 +9,10 @@ body {
   text-align: center;
 }
 
+.col-md-4 p {
+  height: 3em;
+}
+
 .navbar {
   position: fixed;
   z-index: 999;
@@ -24,7 +28,7 @@ body {
   font-weight: 700;
 }
 .collapse.in{
-  background-color: rgba(85, 85, 85, 0.90); 
+  background-color: rgba(85, 85, 85, 0.90);
 }
 
 .main {
@@ -36,7 +40,7 @@ body {
 .jumbotron {
   height: 1000px;
   background: url(../images/new-background.jpg);/*http://i.imgur.com/OqKvEE2.jpg*/
-  background-size: cover; 
+  background-size: cover;
   text-transform: uppercase;
   margin-bottom: 0 !important;
 }
@@ -47,8 +51,8 @@ body {
   font-size: 70px;
   margin-top: 0;
   margin-bottom: 80px;
-  
-  
+
+
 }
 .footer {
   background-color: rgb(85, 85, 85);
@@ -105,8 +109,10 @@ hr {
 #map {
   background-color: transparent;
   color: black;
+  width:100%;
+  height:25em;
 }
-#map{width:100%;height:400px}
+
 #map label{width:auto;display:inline}
 #map img{max-width:inherit}
 
@@ -120,11 +126,6 @@ hr {
 .col-md-4 img:hover{
   border: 4px solid rgba(85, 85, 85, 0.4);
 }
-#up{
-  margin-bottom: 30px !important;
-  margin-right: 50px;
-}
-
 
 @media screen and (min-width: 700px){
 .carousel-inner > .item > img,
@@ -133,5 +134,3 @@ hr {
   margin-left: auto;
   margin-right: auto;}
 }
-
-

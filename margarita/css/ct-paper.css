@@ -3,7 +3,10 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif; }
+  /*font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+*/
+  font-family: 'Exo 2', sans-serif;
+  }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: 400;
@@ -278,11 +281,14 @@ input.ct-red + span + label + span.switch-right {
     color: #FFFFFF;
     background-color: #7A9E9F;
     opacity: 1;
+    position: relative;
+    left: -1.2em;
     filter: alpha(opacity=100); }
     .navbar .navbar-nav > li > a.btn-primary.btn-fill:hover, .navbar .navbar-nav > li > a.btn-primary.btn-fill:focus, .navbar .navbar-nav > li > a.btn-primary.btn-fill:active, .navbar .navbar-nav > li > a.btn-primary.btn-fill.active, .open > .navbar .navbar-nav > li > a.btn-primary.btn-fill.dropdown-toggle, .btn-primary.btn-fill:hover, .btn-primary.btn-fill:focus, .btn-primary.btn-fill:active, .btn-primary.btn-fill.active, .open > .btn-primary.btn-fill.dropdown-toggle {
       background-color: #427C89;
       color: #FFFFFF;
-      border-color: #427C89; }
+      border-color: #427C89;
+      }
     .navbar .navbar-nav > li > a.btn-primary.btn-fill .caret, .btn-primary.btn-fill .caret {
       border-top-color: #FFFFFF; }
   .navbar .navbar-nav > li > a.btn-primary.btn-simple:hover, .navbar .navbar-nav > li > a.btn-primary.btn-simple:focus, .navbar .navbar-nav > li > a.btn-primary.btn-simple:active, .navbar .navbar-nav > li > a.btn-primary.btn-simple.active, .open > .navbar .navbar-nav > li > a.btn-primary.btn-simple.dropdown-toggle, .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus, .btn-primary.btn-simple:active, .btn-primary.btn-simple.active, .open > .btn-primary.btn-simple.dropdown-toggle {
@@ -2073,7 +2079,7 @@ textarea.form-control {
     transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     position: relative; }
 
-  
+
 
   .nav-open .navbar .container {
     left: -230px; }
